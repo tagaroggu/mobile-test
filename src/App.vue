@@ -1,21 +1,18 @@
 <script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from './components/HelloWorld.vue'
+  import Extras from './components/Extra.vue';
+  import { ref } from 'vue';
+
+  const count = ref(0);
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + Vite" />
+  This is a <strong>test</strong> of programming on a phone. Lots of mistakes will be made, but it's a <em>learning experience</em>.
+  <br>
+  Want to tally my mistakes with me? <button @click="count++">{{ count }}</button>
+  <br>
+  <Extras />
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
